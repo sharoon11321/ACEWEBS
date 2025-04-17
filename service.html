@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acewebs/service</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #E0AED0;
+            transition: color 0.3s ease;
+        }
+        .logo:hover {
+            color: #fff;
+        }
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #E0AED0;
+        }
+        .service-section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #222;
+        }
+        .service-section:last-child {
+            border-bottom: none;
+        }
+        .service-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .service-description {
+            color: #aaa;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+        .service-list li {
+            margin-bottom: 0.75rem;
+            color: #ddd;
+        }
+        .service-list li::before {
+            content: "✓";
+            color: #E0AED0;
+            margin-right: 0.5rem;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .contact-info p {
+            margin-bottom: 0.75rem;
+            color: #ddd;
+        }
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .contact-icons a {
+            display: inline-block;
+            color: #fff;
+            font-size: 2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .contact-icons a:hover {
+            color: #E0AED0;
+            transform: scale(1.2);
+        }
+        .contact-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #E0AED0;
+            color: #000;
+            text-decoration: none;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .contact-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-bottom: 2rem;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="flex items-center justify-between py-6" data-aos="fade-down">
+            <div class="logo">AceWebs</div>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="service.html" class="nav-link" style="color: #E0AED0;">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="tel:+15551234567" class="nav-link">Call: Call: +91 759-394-3130</a>
+            </nav>
+        </header>
+
+        <section class="service-section" data-aos="fade-up">
+            <h2 class="service-title">Website Design</h2>
+            <p class="service-description">We create stunning, user-friendly websites tailored to your brand and business goals.</p>
+            <ul class="service-list">
+                <li>Custom Website Design</li>
+                <li>Responsive Layouts (Mobile, Tablet, Desktop)</li>
+                <li>E-commerce Solutions</li>
+                <li>SEO Optimization</li>
+                <li>Content Management Systems (CMS)</li>
+            </ul>
+            <a href="contact.html" class="contact-button">Get a Quote</a>
+        </section>
+
+        <section class="service-section" data-aos="fade-up">
+            <h2 class="service-title">Online Listing Services</h2>
+            <p class="service-description">Improve your online presence and visibility with our comprehensive listing services.</p>
+            <ul class="service-list">
+                <li>Business Profile Creation and Optimization</li>
+                <li>Listing on Major Platforms (Google, Yelp, etc.)</li>
+                <li>Review Management</li>
+                <li>Analytics and Reporting</li>
+            </ul>
+            <a href="contact.html" class="contact-button">Get Started</a>
+        </section>
+
+        <section class="service-section" data-aos="fade-up">
+            <h2 class="service-title">Logo Design</h2>
+            <p class="service-description">Craft a unique and memorable brand identity with our professional logo design services.</p>
+            <ul class="service-list">
+                <li>Custom Logo Concepts</li>
+                <li>Brand Style Guides</li>
+                <li>Unlimited Revisions</li>
+                <li>High-Resolution Files</li>
+            </ul>
+            <a href="contact.html" class="contact-button">Design Your Logo</a>
+            
+        </section>
+       
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@dezign.com">Acewebs321@gmail.com</a></p>
+            <a href="tel:+15551234567" class="nav-link">Call: +91 7593943130</a>
+            <div class="contact-icons">
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" aria-label="Gmail">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+     
+        <footer class="footer">
+            <p>All Copyright reserved @ Ace Webs</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+</body>
+</html>
